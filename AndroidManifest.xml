@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- General settings that contain necessary info for the project -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sports_tournament_app"
+        tools:targetApi="31">
+
+        <!-- The main activity file. Contains information relating to the MainActivity.java file.-->
+        <!-- Information includes allowing other resources to access the project and having the file be teh starting screen for the
+        app when opened for the first time. -->
+
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Java files that are linked to the manifest file, allowing them to be accessed in the current project. -->
+       <!-- Each <activity> has the name of the java file. -->
+        <activity android:name=".aboutjava">
+        </activity>
+
+        <activity android:name=".helpjava">
+        </activity>
+
+        <activity android:name=".signinjava">
+        </activity>
+
+        <activity android:name=".signupjava">
+        </activity>
+
+        <activity android:name=".orderint">
+        </activity>
+
+        <activity android:name=".orderprocess">
+        </activity>
+
+        <!--<activity android:name=".orderingticketsjava">
+        </activity>
+
+        <activity android:name=".ticketsorderedjava">
+        </activity> -->
+
+    </application>
+
+</manifest>
